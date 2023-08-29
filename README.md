@@ -11,7 +11,9 @@ Figure 1: Example of truly long-term actions. Top: Who is winning this soccer ga
 ## Contents
 
 annotations/: Contains the annotations for the video datasets used in our study and the timesteps used to create video segments.
+
 src/: Includes the code used to create the video segments, generate Figure 2 of the paper, calculate the user agreement and some common utils.
+
 user_studies/: Contains the code and data for the user studies conducted in the paper, as well as the results and analysis obtained.
 
 ## Citation
@@ -25,3 +27,7 @@ If you find this work helpful or use the code provided in this repository, pleas
   journal={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops},
   year={2023}
 }
+
+## Contact
+
+For any inquiries or questions regarding the paper, code, or experiments, please feel free to contact o.strafforello@tudelft.nl.
