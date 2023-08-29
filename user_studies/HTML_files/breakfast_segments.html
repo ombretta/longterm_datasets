@@ -1,0 +1,1053 @@
+<!-- Main container -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" /><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"> </script>
+<script src="https://assets.crowd.aws/crowd-html-elements.js"></script>
+<crowd-form answer-format="flatten-objects">
+<div class="container">
+    <div id="content">
+        <h1 class="job-title">What action is being performed in the video?</h1></br></br>
+
+        <p class="informed_consent">
+          The results of this study will be used for
+          research purposes and for the creation of research publications.
+          All responses are treated as confidential. Your participation in this research is voluntary and we
+          do not collect any personal information from the participants, therefore your contribution cannot
+          be withdrawn after the completion of this study.</br>
+          If you understand the statements above and freely consent to participate in the task,
+          please answer the following questions and press the 'Submit' button. If you do not wish to participate,
+          then please do not click on the 'Submit' button.</p>
+
+        <p class="instructions"> In this task we ask you to watch <b>one video clip</b> and express what <b>action</b>
+            is being performed in the video clip, in your opinion.</br> There are 10 possible actions:
+            <ol>
+                <li>Making coffee</li>
+                <li>Making tea</li>
+                <li>Making a glass of orange juice</li>
+                <li>Making a glass of chocolate milk</li>
+                <li>Making a cereal bowl</li>
+                <li>Making a fruit salad</li>
+                <li>Making scrambled eggs</li>
+                <li>Making fried eggs</li>
+                <li>Making pancakes</li>
+                <li>Making a sandwich</li>
+            </ol>
+            </br> To select an action, click on the corresponding button.
+        When you are in doubt about which action to select, choose the button <i>I am not sure</i>.</br>
+        It is important that you watch the video from the beginning to the end.
+        <font color="red">You will be able to click on the actions only after you finished watching the full video.</font></br>
+        <font color="red">We use a mild attention check to accept or reject your work.</font></br>
+        Your input will be used to understand how to improve automatic action recognition.
+        </p>
+
+        <div class="row">
+            <ol><!-- Step 1: Video -->
+
+                <li class="clip1">
+            	    <h2>(1/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer1" class="videoclip1" controls="true"><source src=${videoLink1} type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="1" class="step3">
+                                    <input type="radio" id="dontknow1" name="actionClass1" value="dontknow1" disabled> <label for="dontknow1" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee1" name="actionClass1" value="coffee1" disabled> <label for="coffee1" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea1" name="actionClass1" value="tea1" disabled> <label for="tea1" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice1" name="actionClass1" value="juice1" disabled> <label for="juice1" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk1" name="actionClass1" value="milk1" disabled> <label for="milk1" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal1" name="actionClass1" value="cereal1" disabled> <label for="cereal1" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad1" name="actionClass1" value="salad1" disabled> <label for="salad1" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg1" name="actionClass1" value="scrambledegg1" disabled> <label for="scrambledegg1" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg1" name="actionClass1" value="friedegg1" disabled> <label for="friedegg1" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake1" name="actionClass1" value="pancake1" disabled> <label for="pancake1" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich1" name="actionClass1" value="sandwich1" disabled> <label for="sandwich1" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip2 hidden">
+            	    <h2>(2/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer2" class="videoclip2" controls="true"><source src="${videoLink2}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="2" class="step3">
+                                    <input type="radio" id="dontknow2" name="actionClass2" value="dontknow2" disabled> <label for="dontknow2" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee2" name="actionClass2" value="coffee2" disabled> <label for="coffee2" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea2" name="actionClass2" value="tea2" disabled> <label for="tea2" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice2" name="actionClass2" value="juice2" disabled> <label for="juice2" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk2" name="actionClass2" value="milk2" disabled> <label for="milk2" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal2" name="actionClass2" value="cereal2" disabled> <label for="cereal2" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad2" name="actionClass2" value="salad2" disabled> <label for="salad2" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg2" name="actionClass2" value="scrambledegg2" disabled> <label for="scrambledegg2" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg2" name="actionClass2" value="friedegg2" disabled> <label for="friedegg2" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake2" name="actionClass2" value="pancake2" disabled> <label for="pancake2" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich2" name="actionClass2" value="sandwich2" disabled> <label for="sandwich2" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip3 hidden">
+            	    <h2>(3/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer3" class="videoclip3" controls="true"><source src="${videoLink3}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="3" class="step3">
+                                    <input type="radio" id="dontknow3" name="actionClass3" value="dontknow3" disabled> <label for="dontknow3" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee3" name="actionClass3" value="coffee3" disabled> <label for="coffee3" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea3" name="actionClass3" value="tea3" disabled> <label for="tea3" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice3" name="actionClass3" value="juice3" disabled> <label for="juice3" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk3" name="actionClass3" value="milk3" disabled> <label for="milk3" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal3" name="actionClass3" value="cereal3" disabled> <label for="cereal3" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad3" name="actionClass3" value="salad3" disabled> <label for="salad3" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg3" name="actionClass3" value="scrambledegg3" disabled> <label for="scrambledegg3" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg3" name="actionClass3" value="friedegg3" disabled> <label for="friedegg3" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake3" name="actionClass3" value="pancake3" disabled> <label for="pancake3" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich3" name="actionClass3" value="sandwich3" disabled> <label for="sandwich3" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip4 hidden">
+            	    <h2>(4/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer4" class="videoclip4" controls="true"><source src="${videoLink4}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="4" class="step4">
+                                    <input type="radio" id="dontknow4" name="actionClass4" value="dontknow4" disabled> <label for="dontknow4" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee4" name="actionClass4" value="coffee4" disabled> <label for="coffee4" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea4" name="actionClass4" value="tea4" disabled> <label for="tea4" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice4" name="actionClass4" value="juice4" disabled> <label for="juice4" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk4" name="actionClass4" value="milk4" disabled> <label for="milk4" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal4" name="actionClass4" value="cereal4" disabled> <label for="cereal4" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad4" name="actionClass4" value="salad4" disabled> <label for="salad4" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg4" name="actionClass4" value="scrambledegg4" disabled> <label for="scrambledegg4" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg4" name="actionClass4" value="friedegg4" disabled> <label for="friedegg4" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake4" name="actionClass4" value="pancake4" disabled> <label for="pancake4" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich4" name="actionClass4" value="sandwich4" disabled> <label for="sandwich4" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip5 hidden">
+            	    <h2>(5/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer5" class="videoclip5" controls="true"><source src="${videoLink5}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="5" class="step5">
+                                    <input type="radio" id="dontknow5" name="actionClass5" value="dontknow5" disabled> <label for="dontknow5" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee5" name="actionClass5" value="coffee5" disabled> <label for="coffee5" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea5" name="actionClass5" value="tea5" disabled> <label for="tea5" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice5" name="actionClass5" value="juice5" disabled> <label for="juice5" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk5" name="actionClass5" value="milk5" disabled> <label for="milk5" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal5" name="actionClass5" value="cereal5" disabled> <label for="cereal5" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad5" name="actionClass5" value="salad5" disabled> <label for="salad5" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg5" name="actionClass5" value="scrambledegg5" disabled> <label for="scrambledegg5" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg5" name="actionClass5" value="friedegg5" disabled> <label for="friedegg5" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake5" name="actionClass5" value="pancake5" disabled> <label for="pancake5" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich5" name="actionClass5" value="sandwich5" disabled> <label for="sandwich5" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip6 hidden">
+            	    <h2>(6/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer6" class="videoclip6" controls="true"><source src="${videoLink6}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="6" class="step6">
+                                    <input type="radio" id="dontknow6" name="actionClass6" value="dontknow6" disabled> <label for="dontknow6" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee6" name="actionClass6" value="coffee6" disabled> <label for="coffee6" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea6" name="actionClass6" value="tea6" disabled> <label for="tea6" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice6" name="actionClass6" value="juice6" disabled> <label for="juice6" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk6" name="actionClass6" value="milk6" disabled> <label for="milk6" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal6" name="actionClass6" value="cereal6" disabled> <label for="cereal6" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad6" name="actionClass6" value="salad6" disabled> <label for="salad6" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg6" name="actionClass6" value="scrambledegg6" disabled> <label for="scrambledegg6" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg6" name="actionClass6" value="friedegg6" disabled> <label for="friedegg6" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake6" name="actionClass6" value="pancake6" disabled> <label for="pancake6" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich6" name="actionClass6" value="sandwich6" disabled> <label for="sandwich6" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip7 hidden">
+            	    <h2>(7/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer7" class="videoclip7" controls="true"><source src="${videoLink7}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="7" class="step7">
+                                    <input type="radio" id="dontknow7" name="actionClass7" value="dontknow7" disabled> <label for="dontknow7" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee7" name="actionClass7" value="coffee7" disabled> <label for="coffee7" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea7" name="actionClass7" value="tea7" disabled> <label for="tea7" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice7" name="actionClass7" value="juice7" disabled> <label for="juice7" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk7" name="actionClass7" value="milk7" disabled> <label for="milk7" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal7" name="actionClass7" value="cereal7" disabled> <label for="cereal7" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad7" name="actionClass7" value="salad7" disabled> <label for="salad7" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg7" name="actionClass7" value="scrambledegg7" disabled> <label for="scrambledegg7" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg7" name="actionClass7" value="friedegg7" disabled> <label for="friedegg7" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake7" name="actionClass7" value="pancake7" disabled> <label for="pancake7" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich7" name="actionClass7" value="sandwich7" disabled> <label for="sandwich7" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip8 hidden">
+            	    <h2>(8/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer8" class="videoclip8" controls="true"><source src="${videoLink8}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="8" class="step8">
+                                    <input type="radio" id="dontknow8" name="actionClass8" value="dontknow8" disabled> <label for="dontknow8" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee8" name="actionClass8" value="coffee8" disabled> <label for="coffee8" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea8" name="actionClass8" value="tea8" disabled> <label for="tea8" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice8" name="actionClass8" value="juice8" disabled> <label for="juice8" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk8" name="actionClass8" value="milk8" disabled> <label for="milk8" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal8" name="actionClass8" value="cereal8" disabled> <label for="cereal8" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad8" name="actionClass8" value="salad8" disabled> <label for="salad8" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg8" name="actionClass8" value="scrambledegg8" disabled> <label for="scrambledegg8" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg8" name="actionClass8" value="friedegg8" disabled> <label for="friedegg8" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake8" name="actionClass8" value="pancake8" disabled> <label for="pancake8" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich8" name="actionClass8" value="sandwich8" disabled> <label for="sandwich8" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip9 hidden">
+            	    <h2>(9/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer9" class="videoclip9" controls="true"><source src="${videoLink9}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="9" class="step9">
+                                    <input type="radio" id="dontknow9" name="actionClass9" value="dontknow9" disabled> <label for="dontknow9" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee9" name="actionClass9" value="coffee9" disabled> <label for="coffee9" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea9" name="actionClass9" value="tea9" disabled> <label for="tea9" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice9" name="actionClass9" value="juice9" disabled> <label for="juice9" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk9" name="actionClass9" value="milk9" disabled> <label for="milk9" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal9" name="actionClass9" value="cereal9" disabled> <label for="cereal9" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad9" name="actionClass9" value="salad9" disabled> <label for="salad9" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg9" name="actionClass9" value="scrambledegg9" disabled> <label for="scrambledegg9" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg9" name="actionClass9" value="friedegg9" disabled> <label for="friedegg9" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake9" name="actionClass9" value="pancake9" disabled> <label for="pancake9" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich9" name="actionClass9" value="sandwich9" disabled> <label for="sandwich9" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip10 hidden">
+            	    <h2>(10/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer10" class="videoclip10" controls="true"><source src="${videoLink10}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="10" class="step10">
+                                    <input type="radio" id="dontknow10" name="actionClass10" value="dontknow10" disabled> <label for="dontknow10" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee10" name="actionClass10" value="coffee10" disabled> <label for="coffee10" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea10" name="actionClass10" value="tea10" disabled> <label for="tea10" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice10" name="actionClass10" value="juice10" disabled> <label for="juice10" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk10" name="actionClass10" value="milk10" disabled> <label for="milk10" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal10" name="actionClass10" value="cereal10" disabled> <label for="cereal10" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad10" name="actionClass10" value="salad10" disabled> <label for="salad10" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg10" name="actionClass10" value="scrambledegg10" disabled> <label for="scrambledegg10" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg10" name="actionClass10" value="friedegg10" disabled> <label for="friedegg10" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake10" name="actionClass10" value="pancake10" disabled> <label for="pancake10" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich10" name="actionClass10" value="sandwich10" disabled> <label for="sandwich10" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+                <li class="clip11 hidden">
+            	    <h2>(11/11) What action is being performed in this video clip?</h2>
+
+            	    <div class="vimeo-wrapper clearfix">
+                        <div class="vimeo-video-1 vimeo-standard">
+                            <video id="videoPlayer11" class="videoclip11" controls="true"><source src="${videoLink11}" type="video/mp4" />
+                                Your browser does not support the video tag, please close this job.</video>
+                        </div>
+
+                        <div class="vimeo-video-2 vimeo-standard">
+                        	    <div id="11" class="step11">
+                                    <input type="radio" id="dontknow11" name="actionClass11" value="dontknow11" disabled> <label for="dontknow11" style="font-size: 16px;"> <i>I am not sure</i></label> <br>
+                        	        <input type="radio" id="coffee11" name="actionClass11" value="coffee11" disabled> <label for="coffee11" style="font-size: 16px;"> Making coffee</label> <br>
+                                    <input type="radio" id="tea11" name="actionClass11" value="tea11" disabled> <label for="tea11" style="font-size: 16px;"> Making tea</label> <br>
+                                    <input type="radio" id="juice11" name="actionClass11" value="juice11" disabled> <label for="juice11" style="font-size: 16px;"> Making a glass of orange juice</label> <br>
+                                    <input type="radio" id="milk11" name="actionClass11" value="milk11" disabled> <label for="milk11" style="font-size: 16px;"> Making a glass of chocolate milk</label> <br>
+                                    <input type="radio" id="cereal11" name="actionClass11" value="cereal11" disabled> <label for="cereal11" style="font-size: 16px;"> Making a cereal bowl</label> <br>
+                                    <input type="radio" id="salad11" name="actionClass11" value="salad11" disabled> <label for="salad11" style="font-size: 16px;"> Making a fruit salad</label> <br>
+                                    <input type="radio" id="scrambledegg11" name="actionClass11" value="scrambledegg11" disabled> <label for="scrambledegg11" style="font-size: 16px;"> Making scrambled eggs</label> <br>
+                                    <input type="radio" id="friedegg11" name="actionClass11" value="friedegg11" disabled> <label for="friedegg11" style="font-size: 16px;"> Making fried eggs</label> <br>
+                                    <input type="radio" id="pancake11" name="actionClass11" value="pancake11" disabled> <label for="pancake11" style="font-size: 16px;"> Making pancakes</label> <br>
+                                    <input type="radio" id="sandwich11" name="actionClass11" value="sandwich11" disabled> <label for="sandwich11" style="font-size: 16px;"> Making a sandwich</label> <br>
+                              </div>
+                        </div>
+                    </div>
+            	</li>
+
+
+              <li class="next_step hidden">
+                  <h2>If you finished analyzing the videos, click on the button "I finished analyzing the videos" to continue with the survey. </h2>
+                  <ul>
+                      <li>After pressing the button below, you will not be able to change your opinion on the videos above.</li>
+                      <li><font color="red">Note, you can submit your answers only if you made a choice for each video.</font></li>
+                </ul>
+                <button type="button" id="next" class="btn btn-info">I finished analyzing the videos</button>
+                <br></br>
+              </li>
+
+
+                <div id="footer1">
+                	<h2 style="margin-top: 0;">Check your answers.</h2>
+                	<ul>
+                		<li>Select an action based on your own understanding of the content.</li>
+                	</ul>
+            	</div>
+
+            </ol>
+        </div>
+
+
+        <div id="footer2" class="last_submit hidden">
+<!--          <h2 style="margin-top: 0;">Check your answers.</h2>-->
+          <input class="btn btn-primary" id="submitButton" type="submit" value="Submit your answers." />
+        </div>
+
+    </div>
+
+
+  </div>
+  </crowd-form>
+  <script type="text/javascript">
+
+   var events = ['abort', // Fires when the loading of an audio/video is aborted
+          'canplay', // Fires when the browser can start playing the audio/video
+          'canplaythrough', // Fires when the browser can play through the audio/video without stopping for buffering
+          'durationchange', // Fires when the duration of the audio/video is changed
+          'emptied', // Fires when the current playlist is empty
+          'ended', // Fires when the current playlist is ended
+          'error', //  Fires when an error occurred during the loading of an audio/video
+          'loadeddata', // Fires when the browser has loaded the current frame of the audio/video
+          'loadedmetadata', // Fires when the browser has loaded meta data for the audio/video
+          'loadstart', // Fires when the browser starts looking for the audio/video
+          'pause', // Fires when the audio/video has been paused
+          'play', // Fires when the audio/video has been started or is no longer paused
+          'playing', // Fires when the audio/video is playing after having been paused or stopped for buffering
+          'progress', //  Fires when the browser is downloading the audio/video
+          'ratechange', // Fires when the playing speed of the audio/video is changed
+          'seeked', // Fires when the user is finished moving/skipping to a new position in the audio/video
+          'seeking', // Fires when the user starts moving/skipping to a new position in the audio/video
+          'stalled', // Fires when the browser is trying to get media data, but data is not available
+          'suspend', // Fires when the browser is intentionally not getting media data
+          'timeupdate', //  Fires when the current playback position has changed
+          'volumechange', // Fires when the volume has been changed
+          'waiting' // Fires when the video stops because it needs to buffer the next frame
+      ];
+
+      var radio_picked = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      const video1 = document.getElementById('videoPlayer1');
+      const video2 = document.getElementById('videoPlayer2');
+      const video3 = document.getElementById('videoPlayer3');
+      const video4 = document.getElementById('videoPlayer4');
+      const video5 = document.getElementById('videoPlayer5');
+      const video6 = document.getElementById('videoPlayer6');
+      const video7 = document.getElementById('videoPlayer7');
+      const video8 = document.getElementById('videoPlayer8');
+      const video9 = document.getElementById('videoPlayer9');
+      const video10 = document.getElementById('videoPlayer10');
+      const video11 = document.getElementById('videoPlayer11');
+
+
+      $('#submitButton').attr('disabled',true);
+
+      video1.addEventListener('ended', function() {
+          $('#dontknow1').attr('disabled',false);
+          $('#coffee1').attr('disabled',false);
+          $('#tea1').attr('disabled',false);
+          $('#juice1').attr('disabled',false);
+          $('#milk1').attr('disabled',false);
+          $('#cereal1').attr('disabled',false);
+          $('#salad1').attr('disabled',false);
+          $('#scrambledegg1').attr('disabled',false);
+          $('#friedegg1').attr('disabled',false);
+          $('#pancake1').attr('disabled',false);
+          $('#sandwich1').attr('disabled',false);
+      });
+
+      $("input:radio[name='actionClass1']").change(function(){
+              var value = $( 'input[name="actionClass1"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[0] = 0;
+              }
+              else {
+                  radio_picked[0] = 1;
+              }
+              update();
+          });
+
+      video2.addEventListener('ended', function() {
+          $('#dontknow2').attr('disabled',false);
+          $('#coffee2').attr('disabled',false);
+          $('#tea2').attr('disabled',false);
+          $('#juice2').attr('disabled',false);
+          $('#milk2').attr('disabled',false);
+          $('#cereal2').attr('disabled',false);
+          $('#salad2').attr('disabled',false);
+          $('#scrambledegg2').attr('disabled',false);
+          $('#friedegg2').attr('disabled',false);
+          $('#pancake2').attr('disabled',false);
+          $('#sandwich2').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass2']").change(function(){
+              var value = $( 'input[name="actionClass2"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[1] = 0;
+              }
+              else {
+                  radio_picked[1] = 1;
+              }
+              update();
+          });
+      
+      video3.addEventListener('ended', function() {
+          $('#dontknow3').attr('disabled',false);
+          $('#coffee3').attr('disabled',false);
+          $('#tea3').attr('disabled',false);
+          $('#juice3').attr('disabled',false);
+          $('#milk3').attr('disabled',false);
+          $('#cereal3').attr('disabled',false);
+          $('#salad3').attr('disabled',false);
+          $('#scrambledegg3').attr('disabled',false);
+          $('#friedegg3').attr('disabled',false);
+          $('#pancake3').attr('disabled',false);
+          $('#sandwich3').attr('disabled',false);
+      });
+
+      $("input:radio[name='actionClass3']").change(function(){
+              var value = $( 'input[name="actionClass3"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[2] = 0;
+              }
+              else {
+                  radio_picked[2] = 1;
+              }
+              update();
+          });
+      
+      video4.addEventListener('ended', function() {
+          $('#dontknow4').attr('disabled',false);
+          $('#coffee4').attr('disabled',false);
+          $('#tea4').attr('disabled',false);
+          $('#juice4').attr('disabled',false);
+          $('#milk4').attr('disabled',false);
+          $('#cereal4').attr('disabled',false);
+          $('#salad4').attr('disabled',false);
+          $('#scrambledegg4').attr('disabled',false);
+          $('#friedegg4').attr('disabled',false);
+          $('#pancake4').attr('disabled',false);
+          $('#sandwich4').attr('disabled',false);
+      });
+   
+      $("input:radio[name='actionClass4']").change(function(){
+              var value = $( 'input[name="actionClass4"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[3] = 0;
+              }
+              else {
+                  radio_picked[3] = 1;
+              }
+              update();
+          });
+      
+      video5.addEventListener('ended', function() {
+          $('#dontknow5').attr('disabled',false);
+          $('#coffee5').attr('disabled',false);
+          $('#tea5').attr('disabled',false);
+          $('#juice5').attr('disabled',false);
+          $('#milk5').attr('disabled',false);
+          $('#cereal5').attr('disabled',false);
+          $('#salad5').attr('disabled',false);
+          $('#scrambledegg5').attr('disabled',false);
+          $('#friedegg5').attr('disabled',false);
+          $('#pancake5').attr('disabled',false);
+          $('#sandwich5').attr('disabled',false);
+      });
+
+      $("input:radio[name='actionClass5']").change(function(){
+              var value = $( 'input[name="actionClass5"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[4] = 0;
+              }
+              else {
+                  radio_picked[4] = 1;
+              }
+              update();
+          });
+
+      video6.addEventListener('ended', function() {
+          $('#dontknow6').attr('disabled',false);
+          $('#coffee6').attr('disabled',false);
+          $('#tea6').attr('disabled',false);
+          $('#juice6').attr('disabled',false);
+          $('#milk6').attr('disabled',false);
+          $('#cereal6').attr('disabled',false);
+          $('#salad6').attr('disabled',false);
+          $('#scrambledegg6').attr('disabled',false);
+          $('#friedegg6').attr('disabled',false);
+          $('#pancake6').attr('disabled',false);
+          $('#sandwich6').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass6']").change(function(){
+              var value = $( 'input[name="actionClass6"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[5] = 0;
+              }
+              else {
+                  radio_picked[5] = 1;
+              }
+              update();
+          });
+
+      video7.addEventListener('ended', function() {
+          $('#dontknow7').attr('disabled',false);
+          $('#coffee7').attr('disabled',false);
+          $('#tea7').attr('disabled',false);
+          $('#juice7').attr('disabled',false);
+          $('#milk7').attr('disabled',false);
+          $('#cereal7').attr('disabled',false);
+          $('#salad7').attr('disabled',false);
+          $('#scrambledegg7').attr('disabled',false);
+          $('#friedegg7').attr('disabled',false);
+          $('#pancake7').attr('disabled',false);
+          $('#sandwich7').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass7']").change(function(){
+              var value = $( 'input[name="actionClass7"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[6] = 0;
+              }
+              else {
+                  radio_picked[6] = 1;
+              }
+              update();
+          });
+
+      video8.addEventListener('ended', function() {
+          $('#dontknow8').attr('disabled',false);
+          $('#coffee8').attr('disabled',false);
+          $('#tea8').attr('disabled',false);
+          $('#juice8').attr('disabled',false);
+          $('#milk8').attr('disabled',false);
+          $('#cereal8').attr('disabled',false);
+          $('#salad8').attr('disabled',false);
+          $('#scrambledegg8').attr('disabled',false);
+          $('#friedegg8').attr('disabled',false);
+          $('#pancake8').attr('disabled',false);
+          $('#sandwich8').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass8']").change(function(){
+              var value = $( 'input[name="actionClass8"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[7] = 0;
+              }
+              else {
+                  radio_picked[7] = 1;
+              }
+              update();
+          });
+
+      video9.addEventListener('ended', function() {
+          $('#dontknow9').attr('disabled',false);
+          $('#coffee9').attr('disabled',false);
+          $('#tea9').attr('disabled',false);
+          $('#juice9').attr('disabled',false);
+          $('#milk9').attr('disabled',false);
+          $('#cereal9').attr('disabled',false);
+          $('#salad9').attr('disabled',false);
+          $('#scrambledegg9').attr('disabled',false);
+          $('#friedegg9').attr('disabled',false);
+          $('#pancake9').attr('disabled',false);
+          $('#sandwich9').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass9']").change(function(){
+              var value = $( 'input[name="actionClass9"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[8] = 0;
+              }
+              else {
+                  radio_picked[8] = 1;
+              }
+              update();
+          });
+      
+      video10.addEventListener('ended', function() {
+          $('#dontknow10').attr('disabled',false);
+          $('#coffee10').attr('disabled',false);
+          $('#tea10').attr('disabled',false);
+          $('#juice10').attr('disabled',false);
+          $('#milk10').attr('disabled',false);
+          $('#cereal10').attr('disabled',false);
+          $('#salad10').attr('disabled',false);
+          $('#scrambledegg10').attr('disabled',false);
+          $('#friedegg10').attr('disabled',false);
+          $('#pancake10').attr('disabled',false);
+          $('#sandwich10').attr('disabled',false);
+      });
+         
+      $("input:radio[name='actionClass10']").change(function(){
+              var value = $( 'input[name="actionClass10"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[9] = 0;
+              }
+              else {
+                  radio_picked[9] = 1;
+              }
+              update();
+          });
+
+      video11.addEventListener('ended', function() {
+          $('#dontknow11').attr('disabled',false);
+          $('#coffee11').attr('disabled',false);
+          $('#tea11').attr('disabled',false);
+          $('#juice11').attr('disabled',false);
+          $('#milk11').attr('disabled',false);
+          $('#cereal11').attr('disabled',false);
+          $('#salad11').attr('disabled',false);
+          $('#scrambledegg11').attr('disabled',false);
+          $('#friedegg11').attr('disabled',false);
+          $('#pancake11').attr('disabled',false);
+          $('#sandwich11').attr('disabled',false);
+      });
+            
+      $("input:radio[name='actionClass11']").change(function(){
+              var value = $( 'input[name="actionClass11"]:checked' ).val();
+
+              if (value == "undefined") {
+                  radio_picked[10] = 0;
+              }
+              else {
+                  radio_picked[10] = 1;
+              }
+              update();
+          });
+
+
+
+      function update() {
+
+          var allOnes = true;
+
+          for (var i = 0; i < radio_picked.length; i++) {
+              if (radio_picked[i] == 1) {
+                  if (i == 0) {
+                      $('.clip2').removeClass('hidden');
+                  } else if (i == 1) {
+                      $('.clip3').removeClass('hidden');
+                  } else if (i == 2) {
+                      $('.clip4').removeClass('hidden');
+                  } else if (i == 3) {
+                      $('.clip5').removeClass('hidden');
+                  } else if (i == 4) {
+                      $('.clip6').removeClass('hidden');
+                  } else if (i == 5) {
+                      $('.clip7').removeClass('hidden');
+                  } else if (i == 6) {
+                      $('.clip8').removeClass('hidden');
+                  } else if (i == 7) {
+                      $('.clip9').removeClass('hidden');
+                  } else if (i == 8) {
+                      $('.clip10').removeClass('hidden');
+                  } else if (i == 9) {
+                      $('.clip11').removeClass('hidden');
+                  }
+              } else {
+                  $('#submitButton').attr('disabled', true);
+              }
+              if (radio_picked[i] !== 1) {
+                  allOnes = false;
+              }
+          }
+
+          if (allOnes) {
+              $('.last_submit').removeClass('hidden');
+              $('#submitButton').attr('disabled', false);
+          } else {
+              $('#submitButton').attr('disabled', true);
+          }
+      }
+
+
+
+
+  </script>
+  <style type="text/css">/* Layout  */
+
+  label {
+      font: 2rem 'Fira Sans', sans-serif;
+  }
+
+  input {
+      margin: .4rem;
+  }
+
+   .vimeo-wrapper {
+          max-width: 980px;
+          position: relative;
+          margin: 0 auto;
+
+      }
+
+      .vimeo-standard {
+          float: left;
+          height: 400px;
+          width: 47%;
+          margin: 10px;
+      }
+
+  .step3 {
+      position: relative;
+      padding-top: 35px;
+      padding-left: 10px;
+  }
+
+   .image-wrapper {
+          max-width: 980px;
+          position: relative;
+          margin: 0 auto;
+
+      }
+
+      .image-standard {
+          float: left;
+          width: 47%;
+          margin: 1px;
+      }
+
+      iframe {
+          width: 100%;
+          height: 100%;
+      }
+
+
+      @media (max-width:767px) {
+
+          .vimeo-standard {
+              float: none;
+              width: 80%;
+              margin: 0 auto;
+              padding-bottom: 10px;
+          }
+      }
+
+      .clearfix:before,
+      .clearfix:after {
+          content: " "; /* 1 */
+          display: table; /* 2 */
+      }
+
+      .clearfix:after {
+          clear: both;
+      }
+
+  .lastli
+  {
+  margin-bottom: 20px;
+  }
+
+  #breakdiv
+  {
+  height: 0px;
+  }
+
+
+  .row
+  {
+      margin-right: 0px;
+      margin-left: 0px;
+  }
+  #addtags_target
+  {
+      height: auto;
+      width: 100%;
+      text-align: center;
+  }
+  #imagecontainer
+  {
+      max-width: 500px;
+  }
+
+  #videocontainer
+  {
+      max-width: 500px;
+  }
+
+  #footer > h2
+  {
+      padding-top: 10px;
+  }
+  .container
+  {
+      position: relative;
+  }
+  h2
+  {
+      margin-top: 20px;
+      font-size: 16px;
+  }
+
+  img
+  {
+      max-width: 100%;
+  }
+  *{
+      box-sizing: border-box;
+      text-shadow: none;
+  }
+
+  #assignment-instructions{
+      display: none;
+  }
+
+  body>#content, #content{
+      margin: 0;
+      background-image:  linear-gradient(#EEF5F8 110px,#EEF5F8 110px,#FFFFFF 110px);
+      border: 0;
+      padding: 0;
+      margin-bottom: -155px;
+  }
+
+
+  /* Header  */
+
+  h1.job-title{
+      margin: 0;
+      padding-left: 55px;
+      padding-bottom: 10px;
+      padding-right: 15px;
+      padding-top: 37px;
+      margin-bottom: 10px;
+      background-color: #EEF5F8;
+      font-size: 23px;
+      color: #000;
+      min-height: 65px;
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAO3SURBVHgB7VtNbtNAGJ0j9AbkCL1BcwN6g+QG6Q3SG/gIPoJXJXUAWd0gwYJI7aILkMyCBSyQBQsWsBj8PCRxbM+MZ/yNPVP1SU/Qqhn7fX/zzU8Ye8ZIuOHnbMOXbMtXLOVrdsvjA/Ezfv+KX1Z/9ySw4fNSXFQyKwUW5b/ckLvq8xgnGGxL7+Gl7QSrmFeR4m10CG9nxKJlREQtmBfY8NmIwtuGwPMnFH/tINTNifcYWfiUXpfXiFGiAbnug9e7I6Eop9Er5gyYw30UPkpKYNAQxDsxQiied2IE0diEJbzOQf2CqPZ5MGK7o6Cwnx38m+psmbOEnxlpD67o6ZiW6xMD8TNv5/oh7L2qFGv0cIT1Z6YXLwpfSKKIo8Bz788/cJ584zz7wfnVo9UYWbDeh/gm4q+UUYA9OY8E1zm74zz/zTvx4s54vEgW/vmUIlVMvnMpLt4bR0DR7gtu/G15rz/LxSMqrMZtpYGn4Y/QV+Hyo/XYUTP8kykEqnj2Rp73wPrTgPHTcsv9BB52fqjw5KFf56EOZOV/Bg6GUIXHqMRjjpeh+CueN/g5hzMGsadvLRxNyR7w2lBDYEyIlGFxT2Pk415BWp7HWQ6y+9V+QavmpEZV3kc5kXjB1T4CrLa8zt7KX9SyTdVOeZRpVh3I/o+ANbUBALSuJuMtH9TjkeT9KeNBBgCjL2qP9X1pVasLDJryXBoAUdBVB/ZAgewzTr2QNjG0pigYDaoBde+pqjaiRPV5Xd47CH3BQw0g2PdHS6rC4qH7c+fv1J8zXuiYcUW6EEKeylD8aXtyorw/8jV/SdYJ7qnK5eY0pmp1dz8diwdPbpsQ7QWgKKq8iu0s/J2q1XWa93U2VoMx1cDIa11RVIGs1VUzc7ofoPKwCsStroqN/QAHG6I6TzdBssTtyy2/YC0QnwXqmqQ6yJa4/ZizTgzoCGXUNUl7rB5pn6th3G0ATIcOdoa69vPrcNjqdlN5XJ5WV1vJHyprksiXuHpqzgcdng419/ZHznvBzuI3UhSAy3vRLSLs0S+MKl6a+yPVgslpdFUGFw5DEqfjYelrgtS/wxJL5swKYpWYByS0W/ygO8Sh3xfqVfX1RpizW84D5IqRIbTrslZFTwdcmw0hHZx+ncbv67M5Tc73M0LsmfgJvj8k6kI+qXCRkoTFztwIU0ZDPO23xuoY1xDJOLluAxgCqZFWX3ulFJ1XU5vxtfcpcTRGwkxrBXI7rTy9qqbfJwF4D6GLIynM1fDokYuKEDuyl/8B4+Y5RBFcp+4AAAAASUVORK5CYII=');
+      background-position: 10px 33px;
+      background-size: 32px;
+      background-repeat: no-repeat;
+  }
+  /* logo */
+
+  p.informed_consent{
+      margin: 0;
+      padding-left: 10px;
+      padding-bottom: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      margin-bottom: 10px;
+      background-color: #EEF5F8;
+      font-size: 14px;
+      min-height: 16px;
+      background-position: 10px 33px;
+      background-size: 32px;
+      background-repeat: no-repeat;
+  }
+
+  #content::after{
+      position: absolute;
+      top: 0px;
+      right: 40px;
+      z-index: 99;
+      content: " ";
+      display: block;
+      width: 186px;
+      height: 104px;
+      background-size: 186px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-color: transparent;
+  }
+
+  @media (max-width: 768px) {
+      #content, body>#content{
+          padding-top: 60px;
+      }
+
+      #content::after{
+          width: 50%;
+          background-size: 100%;
+      }
+  }
+
+  /* Numbered list */
+
+  ol{
+      position: relative;
+      counter-reset: item;
+      list-style-position: inside;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border-left: 1px dotted #00B8FF;
+      margin-left: 25px;
+      margin-right: 15px;
+      margin-top: 10px;
+  }
+
+
+  ol>li{
+      padding-left: 30px;
+      z-index: 1;
+  }
+
+  ol>li::before{
+      font-size: 13px;
+      font-weight: bold;
+      content: counter(item);
+      counter-increment: item;
+      position: absolute;
+      left: -11px;
+      background-color: #00B9FF;
+      width: 20px;
+      height: 20px;
+      line-height: 19px;
+      border-radius: 20px;
+      color: #fff;
+      text-align: center;
+  }
+
+  /* Step title */
+
+  .cml h2{
+      font-size: 15px;
+      color: #000;
+      font-weight: bold;
+  }
+
+  /* Additional comments list */
+
+  ol>li>ul{
+      margin-bottom: 5px;
+  }
+
+  /* Video */
+
+  video{
+      margin: 8px 0 20px 0;
+      border: 1px solid #eee;
+      width: 100%;
+  }
+
+
+
+
+  /* Actions */
+
+  .form-actions{
+      background: transparent;
+      margin: 0;
+      margin-left: 25px;
+      border-left: 1px dotted #00B8FF;
+      padding: 20px 0;
+      position: relative;
+      margin-right: 15px;
+  }
+
+  .form-actions::after{
+      content: " ";
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: -3px;
+      width: 5px;
+      height:5px;
+      background-color: #00B8FF;
+      border-radius: 2px;
+  }
+
+  .submit.btn.btn-warning{
+      /* Readable text on warning buttons  */
+      color: #000;
+      font-weight: bold;
+  }
+
+  .submit.btn{
+      border-radius: 0;
+      padding: 15px 30px;
+  }
+
+
+  /* Footer */
+  #footer{
+      background: #EEF5F8;
+      padding-bottom: 10px;
+
+  }
+  </style>
