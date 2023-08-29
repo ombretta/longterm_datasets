@@ -7,3 +7,21 @@ Many real-world applications, from sport analysis to surveillance, benefit from 
 
 [Figure 1.pdf](https://github.com/ombretta/longterm_datasets/files/12464275/Figure.1.pdf)
 Figure 1: Example of truly long-term actions. Top: Who is winning this soccer game?1, Bottom: Is this person shoplifting in the supermarket?2. In both cases, it is not possible to answer correctly without considering multiple short-term actions together, their order and relations over time.
+
+## Contents
+
+annotations/: Contains the annotations for the video datasets used in our study and the timesteps used to create video segments.
+src/: Includes the code used to create the video segments, generate Figure 2 of the paper, calculate the user agreement and some common utils.
+user_studies/: Contains the code and data for the user studies conducted in the paper, as well as the results and analysis obtained.
+
+## Citation
+
+If you find this work helpful or use the code provided in this repository, please consider citing the paper:
+
+```bibtex
+@article{strafforello2023current,
+  title={Are current long-term video understanding datasets long-term?},
+  author={Strafforello, Ombretta and Schutte, Klamer and van Gemert, Jan},
+  journal={Proceedings of the IEEE/CVF International Conference on Computer Vision Workshops},
+  year={2023}
+}
