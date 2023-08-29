@@ -1,5 +1,5 @@
 # Are current long-term video understanding datasets long-term?
-Official repository of the paper ([Are current long-term video understanding datasets long-term?](https://arxiv.org/pdf/2308.11244.pdf)), published in CVEU 2023.
+Official repository of the paper "Are current long-term video understanding datasets long-term?", published in CVEU 2023 ([link](https://arxiv.org/pdf/2308.11244.pdf)).
 
 ## Abstract
 
